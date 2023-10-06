@@ -1,0 +1,47 @@
+.feature {
+    text-align: center;
+    font-size: $fs;
+    width: 20.4375rem;
+    margin: auto;
+
+    &__notification {
+        display: flex;
+        align-items: center;
+        background-color: $blue;
+        height: 5.4375rem;
+        @include box-s_border-r;
+        p {
+            margin: 0 4.25rem;
+        }
+    }
+
+    &__formulaires{
+        background-color: #fff;
+        height: 100%;
+        @include box-s_border-r;
+        margin-top: 1.5rem;
+        
+        .marg-t {
+            margin-top: 1.5rem;
+        }
+        p {
+            color:rgba(162, 162, 162, 0.742);
+            font-size: 0.6875rem;
+            padding-bottom: 1.875rem;
+            margin: 0 2.375rem;
+        }
+        button {
+            cursor: pointer;
+            color: #fff;
+            font-family: $ff;
+            font-weight: 600;
+            border:  1px  transparent;
+            margin-bottom:0.9375rem;
+            @include box-s_border-r;
+            &:hover {
+                transition: ease-in-out 0.3ms;
+                background-color: hsla(154, 61%, 63%, 0.898);
+            }
+        }
+    }
+}
