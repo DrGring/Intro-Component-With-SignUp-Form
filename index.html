@@ -6,7 +6,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="scss/style.css">  
   <title>Intro component with sign up form</title>
-  <script src="/js/script.js"></script>
+  <!-- <script src="/js/script.js" defer></script> -->
+  <script src="/js/script-message-error.js" defer></script>
 </head>
 <body>
     <header class="header" >
@@ -30,13 +31,13 @@
         <span class="error-message-for-firstName" ></span>
 
         <input type="text" id="lastName" placeholder="Last name">
-        <span></span>
+        <span class="error-message-lastName" ></span>
 
         <input type="email" id ="email" placeholder="Email Adress">
-        <span></span>
+        <span class="error-message-mail" ></span>
 
         <input type="password" id ="password" placeholder="Password">
-        <span></span>
+        <span class="error-message-password"></span>
 
         <button class="form__submit ">
           CLAIM YOUR FREE TRIAL

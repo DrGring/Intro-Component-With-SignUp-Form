@@ -30,7 +30,7 @@ input {
     margin: auto;
     font-weight: 600;
     font-size: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 button {
@@ -38,4 +38,14 @@ button {
     width: 17.375rem;
     height: 3.4375rem;
     font-size: 0.9rem;
+}
+
+span {
+    display: flex;
+    width: 17.375rem;
+    justify-content: end;
+    color: $red;
+    margin-bottom: 0.5rem;
+    font-size: 0.8125rem;
+    font-style: italic;
 }
