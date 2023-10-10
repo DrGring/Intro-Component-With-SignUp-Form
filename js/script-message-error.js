@@ -81,36 +81,28 @@ document.addEventListener('DOMContentLoaded', function() {
     buttonSubmit.addEventListener('click', function(event) {
         event.preventDefault();
 
-        //On fait la vérification
+        //on fait la vérication 
         const validateName = firstNameInput.value.trim();
         const validateLastName = lastNameInput.value.trim();
         const validateEmail = emailInput.value.trim();
         const validatePassword = passwordInput.value.trim();
 
-       /*  effacerMessageErreur(); */ // Efface tous les messages d'erreur à chaque clic
+        effacerMessageErreur(); // Efface tous les messages d'erreur à chaque clic
 
         if (validateName === '') {
             afficherMessageErreur(errorElementPrenom, 'First name cannot be empty');
-        }else {
-            effacerMessageErreur();
         }
 
         if (validateLastName === '') {
             afficherMessageErreur(errorElemntNom, 'Last name cannot be empty');
-        }else {
-            effacerMessageErreur();
         }
 
         if (validateEmail === '') {
             afficherMessageErreur(errorElemntMail, 'Looks like there is no email');
-        }else {
-            effacerMessageErreur();
         }
 
         if (validatePassword === '') {
             afficherMessageErreur(errorElemntPassword, 'Password cannot be empty');
-        }else {
-            effacerMessageErreur();
         }
     });
 
