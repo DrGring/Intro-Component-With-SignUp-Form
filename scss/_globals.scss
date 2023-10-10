@@ -6,10 +6,18 @@ body {
     display: grid;
     justify-content: center;
     text-align: center;
+    width: 100%;
+    height: 100%;
     font-family: $ff;
     color: #fff;
     box-sizing: border-box;
     margin: 0;
+
+    @include breakpoints-up (large) {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 13.18rem;
+    }
 }
 
 *{
@@ -26,18 +34,33 @@ input {
     width: 17.375rem;
     height: 3.4375rem;
     border-radius: 0.3125rem;
-    border: solid 1px gray;
+    border: solid 1px #ccc;
     margin: auto;
     font-weight: 600;
+    font-family: $ff;
     font-size: 1rem;
     margin-bottom: 0.5rem;
+    text-indent: 1.9375rem;
+
+    
+
+    @include breakpoints-up(large) {
+        width: 28.625rem;
+    }
 }
+
+
 
 button {
     background-color: $green;
     width: 17.375rem;
     height: 3.4375rem;
     font-size: 0.9rem;
+
+    @include breakpoints-up(large) {
+        width: 28.625rem;
+        font-size: 1.01rem;
+    }
 }
 
 span {
@@ -48,4 +71,9 @@ span {
     margin-bottom: 0.5rem;
     font-size: 0.8125rem;
     font-style: italic;
+
+    @include breakpoints-up(large) {
+        width: 28.625rem;
+        margin: 0;
+    }
 }

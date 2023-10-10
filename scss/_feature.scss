@@ -3,15 +3,25 @@
     font-size: $fs;
     width: 20.4375rem;
     margin: auto;
+     @include breakpoints-up(large) {
+        width: 33.75rem;
+        margin: 0;
+        margin-top: 6.18rem;
+     }
 
     &__notification {
         display: flex;
+        justify-content: center;
         align-items: center;
         background-color: $blue;
         height: 5.4375rem;
-        @include box-s_border-r;
+        @include box-sh_border-r;
+
         p {
             margin: 0 4.25rem;
+            @include breakpoints-up(large) {
+            margin: 0;
+            }
         }
     }
 
@@ -20,7 +30,7 @@
         justify-items: center;
         background-color: #fff;
         height: 100%;
-        @include box-s_border-r;
+        @include box-sh_border-r;
         margin-top: 1.5rem;
         
         .marg-t {
@@ -42,10 +52,11 @@
             font-weight: 600;
             border:  1px  transparent;
             margin-bottom:0.9375rem;
-            @include box-s_border-r;
+            @include box-sh_border-r-b;
             &:hover {
                 transition: ease-in-out 0.3ms;
                 background-color: hsla(154, 61%, 63%, 0.898);
+                box-shadow: rgba(95, 216, 95, 0.45);
             }
         }
     }
