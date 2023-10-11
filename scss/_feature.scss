@@ -16,6 +16,9 @@
         background-color: $blue;
         height: 5.4375rem;
         @include box-sh_border-r;
+        @include breakpoints-up(large) {
+            height: 3.75rem;
+        }
 
         p {
             margin: 0 4.25rem;
